@@ -1,0 +1,18 @@
+function vocon(word){
+    let vowel ="";
+    let cons = "";
+    
+    const vowels = ['a', 'i', 'o', 'u', 'e']
+    
+     for (let i = 0; i < word.length; i++){
+         let xter = word[i].toLowerCase();
+          if(vowels.includes(xter)){
+              vowel += xter;
+          }else if (xter > "a" && xter < "z"){
+              cons += xter;
+          }
+     }
+     return {vowel , cons}
+}
+console.log(vocon("INfoRmation20"));
+
