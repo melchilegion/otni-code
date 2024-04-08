@@ -1,0 +1,18 @@
+//to sum numbers in an array using js
+function my_sum(myarray){
+let sum = 0;
+for (i = 0; i < myarray.length; i++) {
+    sum += myarray[i]
+}
+return sum;
+}
+console.log(my_sum([1,2,3,4,5,6]));//
+
+function reverse_array(myreverse){
+    var newString = "";
+    for (var i = myreverse.length -1; i >=0; i--) {
+        newString +=myreverse[i];
+    }
+    return newString;
+}
+console.log(reverse_array("paragraph"));
